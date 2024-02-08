@@ -1,0 +1,56 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+html {
+  margin-left: 23px;
+}
+
+.name {
+  margin-top: -7%;
+}
+.about-page .name p {
+  margin-top: -23px;
+  font-size: 0.7rem;
+  background-color: #2d3d50;
+}
+.name h3 {
+  font-size: 2.7rem;
+  letter-spacing: 0.4rem;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+h2 {
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 2em;
+}
+img {
+  max-width: 500px;
+}
+
+.about-page p {
+  margin: 30px 0;
+  background-color: #f3eeed;
+  line-height: 1.5em;
+  padding: 12px;
+}
+
+.about-home {
+  text-align: center;
+}
+.about-home a {
+  text-decoration: none;
+  color: black;
+}
+.about-home a:hover {
+  color: skyblue;
+  text-decoration: underline;
+}

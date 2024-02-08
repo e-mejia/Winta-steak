@@ -1,0 +1,43 @@
+.News {
+  box-shadow: 0 0 15px 5px rgba(44, 82, 100, 0.75);
+  padding: 2px 12px;
+  margin-top: 5%;
+}
+
+img {
+  width: 300px;
+}
+.dates {
+  font-weight: 700;
+}
+
+.free-dinner {
+  color: #ff7f51;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 17px;
+  text-align: center;
+  text-shadow: 2px 2px 5px;
+}
+
+.News a {
+  text-align: center;
+}
+
+.karaoke {
+  margin-top: 3px;
+  margin-bottom: -7px;
+}
+
+.news-home {
+  display: block;
+  text-align: center;
+}
+
+.news-home a {
+  text-decoration: none;
+}
+.news-home a:hover {
+  color: skyblue;
+  text-decoration: underline;
+}
