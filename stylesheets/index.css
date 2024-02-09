@@ -4,16 +4,31 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Bokor", system-ui;
+  color: white;
+  background-image: url(../images/Main_background.jpg);
+}
 .title {
   margin-left: 12%;
 }
 .title h1 {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
+  letter-spacing: 5px;
 }
 .title p {
+  font-size: 0.5rem;
+  color: white;
+  background-color: #2d3d50;
+  letter-spacing: 1px;
+  padding: 5px;
+  text-align: center;
+  margin-top: -20px;
+  letter-spacing: 4px;
 }
 nav {
   display: flex;
+  align-items: baseline;
 }
 
 nav ul {
@@ -23,5 +38,44 @@ nav ul {
 
 .welcome {
   margin-left: 12%;
-  margin-top: 12%;
+  margin-top: 20%;
+  padding: 7px;
+}
+
+.welcome h1 {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+  margin-bottom: -18px;
+}
+
+.welcome h3 {
+  letter-spacing: 7px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: -12px;
+}
+
+.welcome button {
+  padding: 7px;
+  background-color: #2d3d50;
+  color: white;
+}
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 5%;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+ul a:hover {
+  opacity: 0.7;
+  border-bottom: 2px solid rgb(241, 122, 122);
+  transition: 0.5s;
 }
