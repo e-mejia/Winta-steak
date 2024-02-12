@@ -12,7 +12,12 @@ fieldset {
 }
 
 .fieldset-reservation {
-  margin-top: 3%;
+  margin-top: 2%;
+}
+.fieldset-reservation label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 
 input {
