@@ -21,11 +21,13 @@ img {
   text-align: center;
   font-family: Bokor, sans-serif;
 }
+
 .name h3 {
   font-size: 2.7rem;
   margin-bottom: -2px;
   letter-spacing: 0.4rem;
 }
+
 .name p {
   margin-top: -20px;
   font-size: 0.8rem;

@@ -1,14 +1,42 @@
-.News {
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
   box-shadow: 0 0 15px 5px rgba(44, 82, 100, 0.75);
   padding: 2px 12px;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 img {
   width: 300px;
+  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .dates {
   font-weight: 700;
+}
+
+.name {
+  text-align: center;
+  font-family: Bokor, sans-serif;
+}
+.name h3 {
+  font-size: 2.7rem;
+  margin-bottom: -2px;
+  letter-spacing: 0.4rem;
+}
+.name p {
+  margin-top: -20px;
+  font-size: 0.8rem;
+  color: white;
+  padding: 7px;
+  background-color: #2d3d50;
+  letter-spacing: 3px;
 }
 
 .free-dinner {
