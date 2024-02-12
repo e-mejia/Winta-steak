@@ -1,7 +1,10 @@
-let btn = document.querySelector("button");
+// Add click event to the 'check menu' button
 
-btn.onclick = handleclick;
+document
+  .querySelector("button")
 
-function handleclick() {
-  alert("BUTTON clicked!");
-}
+  .addEventListener("click", function handleclick() {
+    wndow.open("../pages/menu.html");
+  });
+
+// Add pages to the navigation links

@@ -1,3 +1,8 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 fieldset {
   display: block;
   margin: 0 auto;
@@ -27,11 +32,20 @@ legend {
 
 .name {
   text-align: center;
-  margin-bottom: 27px;
+  font-family: Bokor, sans-serif;
+}
+.name h3 {
+  font-size: 2.7rem;
+  margin-bottom: -2px;
+  letter-spacing: 0.4rem;
 }
 .name p {
+  margin-top: -20px;
+  font-size: 0.8rem;
   color: white;
-  font-weight: 700;
+  padding: 7px;
+  background-color: #2d3d50;
+  letter-spacing: 3px;
 }
 
 form label {
@@ -43,15 +57,21 @@ form label {
   text-decoration: none;
 }
 
-.ribeye {
+img {
   display: block;
-  width: 100%;
+  width: 300px;
   margin: 0 auto;
+  border-radius: 3px;
 }
 
-.about-home a {
-  font-family: Bokor;
+.about-home {
+  text-align: center;
 }
-input[type="submit"]:hover {
-  background-color: skyblue;
+.about-home a {
+  text-decoration: none;
+  color: black;
+}
+.about-home a:hover {
+  color: skyblue;
+  text-decoration: underline;
 }

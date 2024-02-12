@@ -1,28 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.name {
+  text-align: center;
+  font-family: Bokor, sans-serif;
+}
+.name h3 {
+  font-size: 2.7rem;
+  margin-bottom: -2px;
+  letter-spacing: 0.4rem;
+}
+.name p {
+  margin-top: -20px;
+  font-size: 0.8rem;
+  color: white;
+  padding: 7px;
+  background-color: #2d3d50;
+  letter-spacing: 3px;
 }
 
 .menu-title {
-  margin-top: 5%;
-  display: flex;
-}
-
-.name p {
-  margin-top: -23px;
-  font-size: 0.7rem;
-  padding: 12px;
-  background-color: #2d3d50;
+  margin-top: 50px;
 }
 .menu-title h4,
 h1 {
-  margin: 2.3em;
+  margin: 1rem;
 }
 
 .menu-title h1 {
-  margin-top: 3em;
+  margin-top: 1.7em;
+  padding-left: 160px;
 }
+
 .menu-title h1 {
   margin-left: -150px;
 }
@@ -42,6 +53,11 @@ section img {
 .item {
   flex: 1;
 }
+
+.item img {
+  border-radius: s;
+}
+
 .main {
   display: flex;
   justify-content: space-evenly;
@@ -51,6 +67,7 @@ section img {
   width: 93%;
   text-align: justify;
 }
+
 section h2,
 p {
   margin-top: 24px;
@@ -62,4 +79,16 @@ section p {
 
 hr {
   max-width: 350px;
+}
+
+.about-home {
+  text-align: center;
+}
+.about-home a {
+  text-decoration: none;
+}
+
+.about-home a:hover {
+  color: skyblue;
+  text-decoration: underline;
 }

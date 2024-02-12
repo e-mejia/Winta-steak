@@ -1,30 +1,67 @@
-.gallery {
+body {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: ;
+  font-family: Bokor, sans serif;
 }
 
-h1 {
-  letter-spacing: 0.5rem;
-  text-shadow: 2px 2px lightgray;
+h2 {
+  letter-spacing: 0.7px;
 }
-
+.name {
+  text-align: center;
+  font-family: Bokor, sans-serif;
+}
+.name h3 {
+  font-size: 2.7rem;
+  margin-bottom: -2px;
+  letter-spacing: 0.4rem;
+}
+.name p {
+  margin-top: -20px;
+  font-size: 0.8rem;
+  color: white;
+  padding: 7px;
+  background-color: #2d3d50;
+  letter-spacing: 3px;
+}
 .info {
   font-size: 1.4rem;
   color: orange;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   text-align: center;
-  margin-top: -60px;
   margin-bottom: 30px;
   text-shadow: 1px 2px black;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* height: 100%; */
+}
+
+.images::after {
+  content: "";
+  flex-basis: 610px;
+}
+.images img {
+  margin-bottom: -20px;
+  border-radius: 3px;
+
+  object-fit: cover;
+}
+
+.images p {
+  color: orange;
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
 figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
-  border: 3px solid green;
 }
 
 figure img {

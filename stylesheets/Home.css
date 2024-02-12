@@ -59,8 +59,7 @@ ul a {
   color: white;
 }
 
-.welcome,
-h1 {
+.welcome h1 {
   padding: 20px;
 }
 

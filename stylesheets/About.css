@@ -3,44 +3,58 @@ body {
   margin: 0 auto;
 }
 
-html {
-  margin-left: 23px;
+img {
+  display: block;
+  text-align: center;
+}
+
+.about-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-images img {
+  border-radius: 3px;
 }
 
 .name {
-  margin-top: -7%;
-}
-.about-page .name p {
-  margin-top: -23px;
-  font-size: 0.7rem;
-  background-color: #2d3d50;
+  text-align: center;
+  font-family: Bokor, sans-serif;
 }
 .name h3 {
   font-size: 2.7rem;
+  margin-bottom: -2px;
   letter-spacing: 0.4rem;
 }
+.name p {
+  margin-top: -20px;
+  font-size: 0.8rem;
+  color: white;
+  padding: 7px;
+  background-color: #2d3d50;
+  letter-spacing: 3px;
+}
+
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 
 h2 {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 30px;
+  font-family: Bokor, times new roman;
+  letter-spacing: 3px;
 }
 
 h3 {
   margin-top: 2em;
-}
-img {
-  max-width: 500px;
+  font-family: Bokor, times new roman;
+  letter-spacing: 3px;
 }
 
-.about-page p {
-  margin: 30px 0;
-  background-color: #f3eeed;
-  line-height: 1.5em;
-  padding: 12px;
+img {
+  max-width: 400px;
 }
 
 .about-home {
