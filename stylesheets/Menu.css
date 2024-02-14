@@ -1,5 +1,5 @@
 body {
-  max-width: 1200px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -55,12 +55,13 @@ section img {
 }
 
 .item img {
-  border-radius: s;
+  border-radius: 5px;
 }
 
 .main {
   display: flex;
   justify-content: space-evenly;
+  gap: 12px;
 }
 
 .main p {

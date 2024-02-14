@@ -21,7 +21,7 @@
     <h3>Want to learn more about Winta, or share your experience?</h3>
     <fieldset class="fieldset">
       <legend>Contact Us</legend>
-      <form>
+      <form action="/submit" method="post">
         <p>
           <label for="name">Name:</label>
           <input
@@ -60,7 +60,6 @@
     <fieldset class="fieldset-reservation">
       <legend>Make a reservation</legend>
       <form>
-
         <p>
           <label for="date">Date:</label>
           <input type="date" name="'date">
@@ -68,7 +67,9 @@
         
         <p>
           <label for="requests">Special requests:</label><br>
-         <textarea name="requests" id="" cols="30" rows="10" placeholder="requests">
+         <textarea name="requests" cols="125"
+         rows="15"
+                   placeholder="requests">
          </textarea>
         </p>
         
