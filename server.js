@@ -1,15 +1,17 @@
-// Make express available along with other required tools
+// Load node modules
 const express = require("express");
+// Initialize express
 const app = express();
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+// Port web server will run on
 const PORT = 7000;
 
 // Setup Middleware
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
 
 // Setup Mongodb connection
 mongoose.connect(process.env.DB_CONNECTION);
@@ -39,6 +41,7 @@ app.post("/submit", async function (req, res) {
     email: req.body.email,
     comments: req.body.comments,
   };
+  ``;
 
   try {
     const dataSent = new sentData(formData);
@@ -50,7 +53,7 @@ app.post("/submit", async function (req, res) {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "./index.html");
 });
 
 // Star web server

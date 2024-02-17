@@ -8,14 +8,24 @@ body {
   font-family: "Bokor", system-ui;
   color: white;
   background-image: url(../images/Main_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+html {
+  height: 100%;
+}
+
 .title {
   margin-left: 12%;
 }
+
 .title h1 {
   font-size: 2.8rem;
   letter-spacing: 5px;
 }
+
 .title p {
   font-size: 0.5rem;
   color: white;
