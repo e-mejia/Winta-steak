@@ -30,7 +30,7 @@ const formSchema = new mongoose.Schema({
 
 //  Define your model
 
-const sentData = mongoose.model("sentData, formSchema");
+const sentData = mongoose.model("sentData", formSchema);
 
 // Handle form submission
 app.post("/submit", async function (req, res) {
@@ -40,8 +40,17 @@ app.post("/submit", async function (req, res) {
     comments: req.body.comments,
   };
 
-  const dataSent = new sentData(formData);
-  await dataSent.save();
+  try {
+    const dataSent = new sentData(formData);
+    await dataSent.save();
+    res.redirect("/?success");
+  } catch (error) {
+    res.redirect("/?error");
+  }
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
 });
 
 // Star web server
