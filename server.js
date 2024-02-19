@@ -1,17 +1,22 @@
 // Load node modules
 const express = require("express");
+const ejs = require("ejs");
+const cors = require("cors");
 // Initialize express
+const path = require("path");
 const app = express();
 const mongoose = require("mongoose");
 require("dotenv").config();
-
-// Port web server will run on
-const PORT = 7000;
 
 // Setup Middleware
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+// Set view enginge
+
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // Setup Mongodb connection
 mongoose.connect(process.env.DB_CONNECTION);
@@ -41,7 +46,6 @@ app.post("/submit", async function (req, res) {
     email: req.body.email,
     comments: req.body.comments,
   };
-  ``;
 
   try {
     const dataSent = new sentData(formData);
@@ -52,11 +56,30 @@ app.post("/submit", async function (req, res) {
   }
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "./index.html");
+//GET routes - display pages
+//  Root route
+app.get("/", function (req, res) {
+  res.render("pages/index");
 });
 
-// Star web server
-app.listen(PORT, function () {
-  console.log(`Server listening of port ${PORT}`);
+app.get("/about", function (req, res) {
+  res.render("./pages/about");
+});
+
+app.get("/menu", function (req, res) {
+  res.render("./pages/menu");
+});
+app.get("/Gallery", function (req, res) {
+  res.render("./pages/gallery");
+});
+app.get("/Contact", function (req, res) {
+  res.render("./pages/contact");
+});
+app.get("/News", function (req, res) {
+  res.render("./pages/news");
+});
+
+// Start web server
+app.listen(process.env.PORT || 3000, function () {
+  console.log(`Server listening of port ${process.env.PORT}`);
 });
