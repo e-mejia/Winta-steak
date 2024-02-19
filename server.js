@@ -14,7 +14,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Set view enginge
-
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
@@ -69,6 +68,7 @@ app.get("/about", function (req, res) {
 app.get("/menu", function (req, res) {
   res.render("./pages/menu");
 });
+
 app.get("/Gallery", function (req, res) {
   res.render("./pages/gallery");
 });
