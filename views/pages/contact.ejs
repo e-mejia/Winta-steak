@@ -53,11 +53,11 @@
           ></textarea>
         </p>
         <p>
-          <input type="submit" />
+          <input type="submit" name ='comment-input'/>
         </p>
       </form>
     </fieldset>
-   
+   <h3>Or, just wish to make a reservation?</h3>
     <fieldset class="fieldset-reservation">
       <legend>Make a reservation</legend>
       <form>
@@ -65,17 +65,27 @@
           <label for="date">Date:</label>
           <input type="date" name="'date">
         </p>
-        
+        <p>
+          <label for="time">Time:</label>
+          <input type="time" name="'time">
+        </p>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" name='name' placeholder="Name">
+        </p>
+         <p>
+           <label for="numOfPeople">Number: </label>
+           <input type="number" name="numOfPeople" placeholder="Of guests">
+         </p>        
         <p>
           <label for="requests">Special requests:</label><br>
-         <textarea name="requests" cols="125"
-         rows="15"
-                   placeholder="requests">
+         <textarea name="requests" cols="125" rows="15"
+          placeholder="Special requests">
          </textarea>
         </p>
         
         <p>
-          <input type="submit" />
+          <input type="submit" name="reservation-input" />
         </p>
       </form>
     </fieldset>

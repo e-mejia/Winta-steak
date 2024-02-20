@@ -38,7 +38,7 @@ const formSchema = new mongoose.Schema({
 
 const sentData = mongoose.model("sentData", formSchema);
 
-// Handle form submission
+// Handle form submission - comments
 app.post("/submit", async function (req, res) {
   const formData = {
     name: req.body.name,
@@ -53,6 +53,16 @@ app.post("/submit", async function (req, res) {
   } catch (error) {
     res.redirect("/?error");
   }
+});
+
+// Handle form submission - reservations
+app.post("/submit/reservation", async function (req, res) {
+  const reservation = {
+    date: req.body.date,
+    time: req.body.time,
+    name: req.body.name,
+    numPeople: req.body.numOfPeople,
+  };
 });
 
 //GET routes - display pages

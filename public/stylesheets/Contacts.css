@@ -20,6 +20,21 @@ fieldset {
   margin-right: 10px;
 }
 
+.fieldset-reservation label[for="time"] {
+  margin-left: -22px;
+}
+
+.fieldset-reservation label[for="name"] {
+  margin-left: 38px;
+}
+.fieldset-reservation label[for="numOfPeople"] {
+  margin-left: 18px;
+}
+
+.fieldset-reservation label[for="requests"] {
+  margin-left: -780px;
+}
+
 input {
   padding: 7px;
 }
