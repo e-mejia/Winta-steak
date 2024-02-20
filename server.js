@@ -27,16 +27,26 @@ db.once("open", function () {
 });
 
 // Define our schema for form data
-
 const formSchema = new mongoose.Schema({
   name: String,
   email: String,
   comments: String,
 });
 
+// Define form reservation schema
+const reservationSchema = new mongoose.Schema({
+  date: DataView,
+  time: string,
+  name: string,
+  numPeople: number
+})
+
+
+
 //  Define your model
 
 const sentData = mongoose.model("sentData", formSchema);
+const 
 
 // Handle form submission - comments
 app.post("/submit", async function (req, res) {
@@ -63,6 +73,10 @@ app.post("/submit/reservation", async function (req, res) {
     name: req.body.name,
     numPeople: req.body.numOfPeople,
   };
+
+  try {
+    const 
+  }
 });
 
 //GET routes - display pages
