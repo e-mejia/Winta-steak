@@ -22,7 +22,7 @@
     <h3>Want to learn more about Winta, or share your experience?</h3>
     <fieldset class="fieldset">
       <legend>Contact Us</legend>
-      <form action="/submit" method="post">
+      <form action="/submit" method="POST">
         <p>
           <label for="name">Name:</label>
           <input
@@ -53,21 +53,22 @@
           ></textarea>
         </p>
         <p>
-          <input type="submit" name ='comment-input'/>
+          <button type="submit" name ='comment-input'>Submit</button>
         </p>
       </form>
     </fieldset>
    <h3>Or, just wish to make a reservation?</h3>
+
     <fieldset class="fieldset-reservation">
       <legend>Make a reservation</legend>
-      <form>
+      <form action="/submit/reservation" method="POST">
         <p>
           <label for="date">Date:</label>
-          <input type="date" name="'date">
+          <input type="date" name="date">
         </p>
         <p>
           <label for="time">Time:</label>
-          <input type="time" name="'time">
+          <input type="text" name="'time" placeholder="AM or PM">
         </p>
         <p>
           <label for="name">Name:</label>
@@ -85,7 +86,7 @@
         </p>
         
         <p>
-          <input type="submit" name="reservation-input" />
+          <button type="submit" name="reservation">Submit</button>
         </p>
       </form>
     </fieldset>

@@ -28,25 +28,21 @@ db.once("open", function () {
 
 // Define our schema for form data
 const formSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  comments: String,
+  name: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+  },
+  comments: {
+    type: String,
+  },
 });
 
-// Define form reservation schema
-const reservationSchema = new mongoose.Schema({
-  date: DataView,
-  time: string,
-  name: string,
-  numPeople: number
-})
-
-
-
 //  Define your model
-
 const sentData = mongoose.model("sentData", formSchema);
-const 
 
 // Handle form submission - comments
 app.post("/submit", async function (req, res) {
@@ -65,18 +61,47 @@ app.post("/submit", async function (req, res) {
   }
 });
 
+// Define form reservation schema
+const reservationSchema = new mongoose.Schema({
+  date: {
+    type: Date,
+    required: true,
+  },
+  time: {
+    type: String,
+    required: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
+  numPeople: {
+    type: Number,
+    required: true,
+  },
+});
+
+const resModel = mongoose.model("resModel", reservationSchema);
+
 // Handle form submission - reservations
 app.post("/submit/reservation", async function (req, res) {
-  const reservation = {
-    date: req.body.date,
-    time: req.body.time,
-    name: req.body.name,
-    numPeople: req.body.numOfPeople,
-  };
+  // const reservation = {
+  //   date: req.body.date.value,
+  //   time: req.body.time.value,
+  //   name: req.body.name,
+  //   numPeople: req.body.numOfPeople,
+  // };
 
-  try {
-    const 
-  }
+  console.log(`>>>>> ${req.body}`);
+  // try {
+  //   const reservationData = new resModel(reservation);
+  //   await reservationData.save();
+  //   // alert(`Reservation for ${date} at ${time} has been confirmed`);
+  //   console.log("confirmed!!");
+  //   res.redirect("/");
+  // } catch (error) {
+  //   console.error(error);
+  // }
 });
 
 //GET routes - display pages
