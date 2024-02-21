@@ -21,7 +21,7 @@ fieldset {
 }
 
 .fieldset-reservation label[for="time"] {
-  margin-left: -22px;
+  margin-left: 43px;
 }
 
 .fieldset-reservation label[for="name"] {

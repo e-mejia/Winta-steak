@@ -85,23 +85,24 @@ const resModel = mongoose.model("resModel", reservationSchema);
 
 // Handle form submission - reservations
 app.post("/submit/reservation", async function (req, res) {
-  // const reservation = {
-  //   date: req.body.date.value,
-  //   time: req.body.time.value,
-  //   name: req.body.name,
-  //   numPeople: req.body.numOfPeople,
-  // };
+  const reservation = {
+    date: req.body.date,
+    time: req.body.time,
+    name: req.body.name,
+    numPeople: req.body.numOfPeople,
+  };
 
-  console.log(`>>>>> ${req.body}`);
-  // try {
-  //   const reservationData = new resModel(reservation);
-  //   await reservationData.save();
-  //   // alert(`Reservation for ${date} at ${time} has been confirmed`);
-  //   console.log("confirmed!!");
-  //   res.redirect("/");
-  // } catch (error) {
-  //   console.error(error);
-  // }
+  try {
+    const reservationData = new resModel(reservation);
+    await reservationData.save();
+    let output = `
+     <h3 style="color: Blue">Reservation confirmed</h3>
+     `;
+    res.send(output);
+    // res.redirect("/");
+  } catch (error) {
+    console.error(error);
+  }
 });
 
 //GET routes - display pages
