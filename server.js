@@ -26,7 +26,7 @@ db.once("open", function () {
   console.log("Connected to MongoDB");
 });
 
-// Define our schema for form data
+// Define our schema for form data, commenting/more info
 const formSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -55,7 +55,10 @@ app.post("/submit", async function (req, res) {
   try {
     const dataSent = new sentData(formData);
     await dataSent.save();
-    res.redirect("/?success");
+    let output = `<h3 style="color: Blue">Thank you!  We hope you enjoyed dining at Winta!</h3>
+<a href="/">Back home</a>`;
+
+    res.send(output);
   } catch (error) {
     res.redirect("/?error");
   }
@@ -79,6 +82,9 @@ const reservationSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  requests: {
+    type: String,
+  },
 });
 
 const resModel = mongoose.model("resModel", reservationSchema);
@@ -90,16 +96,17 @@ app.post("/submit/reservation", async function (req, res) {
     time: req.body.time,
     name: req.body.name,
     numPeople: req.body.numOfPeople,
+    requests: req.body.requests,
   };
 
   try {
     const reservationData = new resModel(reservation);
     await reservationData.save();
-    let output = `
-     <h3 style="color: Blue">Reservation confirmed</h3>
-     `;
+    let output = `<h3 style="color: Blue">Your reservation is now confirmed!</h3>
+    <h4>We look forward to serving you!</h4>
+<a href="/">Back home</a>`;
+
     res.send(output);
-    // res.redirect("/");
   } catch (error) {
     console.error(error);
   }
