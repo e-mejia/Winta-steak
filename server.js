@@ -102,11 +102,13 @@ app.post("/submit/reservation", async function (req, res) {
   try {
     const reservationData = new resModel(reservation);
     await reservationData.save();
-    let output = `<h3 style="color: Blue">Your reservation is now confirmed!</h3>
+    let output = `<h3 style="color: Blue">Thank you ${reservation.name} Your reservation is now confirmed for
+                  ${reservation.date} at ${reservation.time}!</h3>
     <h4>We look forward to serving you!</h4>
 <a href="/">Back home</a>`;
 
     res.send(output);
+    res.render();
   } catch (error) {
     console.error(error);
   }
