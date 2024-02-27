@@ -54,10 +54,6 @@ nav ul {
   margin-right: 17%;
 }
 
-.navLinks .fa {
-  display: none;
-}
-
 .section {
   display: flex;
   margin-left: 12%;
@@ -87,6 +83,7 @@ nav ul {
   background-color: #2d3d50;
   color: white;
 }
+
 ul {
   display: flex;
 }
@@ -95,6 +92,7 @@ ul li {
   list-style: none;
   padding: 5%;
 }
+
 ul a {
   text-decoration: none;
   color: white;
@@ -107,38 +105,43 @@ ul a:hover {
   border-bottom: 3px solid rgb(241, 122, 122);
   transition: 0.5s;
 }
+.navLinks svg {
+  display: none;
+}
+/* Media queries for responsiveness */
 
-@media screen and (max-width: 800px) {
-  ul {
-    display: block;
+@media screen and (max-width: 700px) {
+  .hideonmobile {
+    display: none;
   }
-  .navLinks {
-    position: absolute;
-    margin-right: 0;
-    margin-top: 0;
+
+  .sidebar {
+    position: fixed;
+
     background: #98342d;
     height: 100vh;
     width: 200px;
     top: 0;
     right: 0;
     text-align: left;
-    z-index: 2;
+    z-index: 99;
+  }
+
+  .sidebar svg {
+    display: block;
   }
   .welcome {
-    margin-top: 30%;
+    margin-top: 60%;
   }
 
   .welcome h3 {
     font-size: 1rem;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.5px;
     margin-bottom: 0.5%;
   }
   .welcome h1 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     margin-bottom: 0.5%;
-  }
-
-  .navLinks .fa {
-    display: block;
+    letter-spacing: 0.5%;
   }
 }

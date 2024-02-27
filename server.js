@@ -87,6 +87,8 @@ const reservationSchema = new mongoose.Schema({
   },
 });
 
+//  Define reservation model that maps to reservationSchema
+
 const resModel = mongoose.model("resModel", reservationSchema);
 
 // Handle form submission - reservations
