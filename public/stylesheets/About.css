@@ -70,3 +70,10 @@ img {
   color: skyblue;
   text-decoration: underline;
 }
+
+@media and screen (max-width: 700px) {
+  .about-images {
+    display: block;
+    margin-bottom: 7px;
+  }
+}
