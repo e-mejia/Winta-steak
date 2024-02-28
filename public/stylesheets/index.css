@@ -91,9 +91,12 @@ ul {
 ul li {
   list-style: none;
   padding: 5%;
+  width: 100%;
 }
 
 ul a {
+  height: 100%;
+  width: 100%;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
@@ -105,9 +108,12 @@ ul a:hover {
   border-bottom: 3px solid rgb(241, 122, 122);
   transition: 0.5s;
 }
-.navLinks svg {
+
+.mobileMenu,
+.sidebar {
   display: none;
 }
+
 /* Media queries for responsiveness */
 
 @media screen and (max-width: 700px) {
@@ -115,21 +121,34 @@ ul a:hover {
     display: none;
   }
 
+  .mobileMenu {
+    display: block;
+  }
+
+  /* The menu for mobile view  */
+
   .sidebar {
     position: fixed;
-
-    background: #98342d;
-    height: 100vh;
-    width: 200px;
     top: 0;
     right: 0;
-    text-align: left;
+    height: 100vh;
+    width: 200px;
+    background: #98342d;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     z-index: 99;
+    transition: 2s;
   }
 
   .sidebar svg {
     display: block;
   }
+  .navlinks svg {
+    display: block;
+  }
+
   .welcome {
     margin-top: 60%;
   }
@@ -137,10 +156,9 @@ ul a:hover {
   .welcome h3 {
     font-size: 1rem;
     letter-spacing: 0.5px;
-    margin-bottom: 0.5%;
   }
   .welcome h1 {
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5%;
     letter-spacing: 0.5%;
   }
