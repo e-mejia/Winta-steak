@@ -89,3 +89,11 @@ figcaption {
   letter-spacing: 0.1rem;
   text-align: center;
 }
+
+/* Mobile site */
+
+@media (max-width: 700px) {
+  body {
+    text-align: center;
+  }
+}

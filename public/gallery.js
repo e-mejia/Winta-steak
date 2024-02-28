@@ -29,7 +29,7 @@ gallery.map((item) => {
       <p>${galinfo[i++]}</p>
       </div>
   `;
-  galOutput;
+  // galOutput;
 });
 
 gal.innerHTML = galOutput;
