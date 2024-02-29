@@ -1,6 +1,7 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 fieldset {
@@ -99,4 +100,33 @@ img {
 .about-home a:hover {
   color: skyblue;
   text-decoration: underline;
+}
+
+.fieldset-mobile,
+.fieldset-reservation-mobile,
+.h3-mobile {
+  display: none;
+}
+
+/* Mobile layout */
+
+@media (max-width: 700px) {
+  body {
+    width: 100%;
+  }
+
+  fieldset {
+    width: 400px;
+  }
+  .fieldset,
+  .fieldset-reservation,
+  .h3 {
+    display: none;
+  }
+
+  .fieldset-mobile,
+  .fieldset-reservation-mobile,
+  .h3-mobile {
+    display: block;
+  }
 }

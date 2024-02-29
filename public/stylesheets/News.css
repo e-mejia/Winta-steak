@@ -37,6 +37,7 @@ img {
   padding: 7px;
   background-color: #2d3d50;
   letter-spacing: 3px;
+  text-align: justify;
 }
 
 .free-dinner {
@@ -64,6 +65,7 @@ img {
 
 .news-home a {
   text-decoration: none;
+  font-size: 1.3rem;
 }
 .news-home a:hover {
   color: skyblue;

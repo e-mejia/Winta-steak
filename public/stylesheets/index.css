@@ -128,7 +128,7 @@ ul a:hover {
   /* The menu for mobile view  */
 
   .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     height: 100vh;
@@ -139,7 +139,6 @@ ul a:hover {
     align-items: flex-start;
     justify-content: flex-start;
     z-index: 99;
-    transition: 2s;
   }
 
   .sidebar svg {

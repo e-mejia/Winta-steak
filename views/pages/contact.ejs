@@ -16,6 +16,8 @@
 <header>
   <%- include('../partials/header') %>
 </header>
+
+<!-- Desktop layout -->
   
     <img src="../images/Ribeye-Steak-Garlic-Butter.jpg" alt="Ribeye stake"/>
 
@@ -57,7 +59,7 @@
       </form>
     </fieldset>
     
-   <h3>Or, just wish to make a reservation?</h3>
+   <h3 class="h3">Or, just wish to make a reservation?</h3>
    <h3 id="confirmed"></h3>
 
     <fieldset class="fieldset-reservation" id="resevationID">
@@ -84,6 +86,78 @@
          <textarea name="requests" cols="125" rows="15"
           placeholder="Special requests">
          </textarea>
+         <p>
+          <button type="submit" name="reservation">Submit</button>
+        </p>
+      </form>
+      </fieldset>
+
+         <!-- Mobile layout -->
+
+         <fieldset class="fieldset-mobile">
+          <legend>Contact Us</legend>
+          <form action="/submit" method="POST">
+            <p>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </p>
+            <p>
+              <label for="comments" class="comments">
+                Comments:
+              </label>
+              <br />
+              <textarea
+                name="comments"
+                cols="25"
+                rows="15"
+                placeholder="Share your comments"
+              ></textarea>
+            </p>
+            <p>
+              <button type="submit" name ='comment-input'>Submit</button>
+            </p>
+          </form>
+        </fieldset>
+        
+       <h3 class="h3-mobile">Or, just wish to make a reservation?</h3>
+       <h3 id="confirmed-mobile"></h3>
+    
+        <fieldset class="fieldset-reservation-mobile" id="resevationID-mobile">
+          <legend>Make a reservation</legend>
+          <form action="/submit/reservation" method="POST">
+            <p>
+              <label for="date">Date:</label>
+              <input type="date" name="date">
+            </p>
+            <p>
+              <label for="time">Time:</label>
+              <input type="text" name="time" placeholder="AM or PM" id="time">
+            </p>
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" name='name' placeholder="Name">
+            </p>
+             <p>
+               <label for="numOfPeople">Number: </label>
+               <input type="number" name="numOfPeople" placeholder="Of guests">
+             </p>        
+            <p>
+              <label for="requests">Special requests:</label><br>
+             <textarea name="requests" cols="25" rows="15"
+              placeholder="Special requests">
+             </textarea>
         </p>
         <p>
           <button type="submit" name="reservation">Submit</button>
