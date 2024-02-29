@@ -37,6 +37,14 @@ img {
   padding: 7px;
   background-color: #2d3d50;
   letter-spacing: 3px;
+  text-align: center;
+}
+
+h2,
+h4 {
+  font-family: Bokor, sans serif;
+}
+p {
   text-align: justify;
 }
 
@@ -66,6 +74,7 @@ img {
 .news-home a {
   text-decoration: none;
   font-size: 1.3rem;
+  font-family: Bokor, sans serif;
 }
 .news-home a:hover {
   color: skyblue;

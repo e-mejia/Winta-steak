@@ -42,6 +42,12 @@ h1 {
   border-bottom: dashed 2px gray;
 }
 
+h1,
+h2,
+h4 {
+  font-family: Bokor, sans serif;
+}
+
 section {
   margin: 3%;
 }
@@ -88,6 +94,8 @@ hr {
 }
 .about-home a {
   text-decoration: none;
+  font-size: 1.3rem;
+  font-family: Bokor, sans serif;
 }
 
 .about-home a:hover {
@@ -117,5 +125,10 @@ hr {
 
   .item .details {
     text-align: center;
+    padding: 27px;
+  }
+
+  .name {
+    padding: 27px;
   }
 }

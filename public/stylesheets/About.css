@@ -2,6 +2,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
+  font-family: Bokor, sans serif;
 }
 
 img {
@@ -36,6 +37,8 @@ img {
   padding: 7px;
   background-color: #2d3d50;
   letter-spacing: 3px;
+  text-align: center;
+  font-family: Bokor, sans-serif;
 }
 
 p {
@@ -80,6 +83,9 @@ img {
     text-align: center;
   }
 
+  .about-text {
+    padding: 27px;
+  }
   .about-images {
     display: flex;
     flex-direction: column;
@@ -88,5 +94,9 @@ img {
 
   .about-images img {
     margin-top: 7px;
+  }
+
+  .name {
+    padding: 27px;
   }
 }

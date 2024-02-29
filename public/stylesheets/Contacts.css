@@ -95,7 +95,8 @@ img {
 }
 .about-home a {
   text-decoration: none;
-  color: black;
+  font-size: 1.3rem;
+  font-family: Bokor, sans serif;
 }
 .about-home a:hover {
   color: skyblue;
@@ -115,6 +116,10 @@ img {
     width: 100%;
   }
 
+  .h3-mobile,
+  .h3-desktop {
+    margin-left: 4%;
+  }
   fieldset {
     width: 400px;
   }
@@ -128,5 +133,9 @@ img {
   .fieldset-reservation-mobile,
   .h3-mobile {
     display: block;
+  }
+
+  .name {
+    padding: 27px;
   }
 }
