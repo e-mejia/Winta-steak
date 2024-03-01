@@ -6,6 +6,7 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 const mongoose = require("mongoose");
+const { log } = require("console");
 require("dotenv").config();
 
 // Setup Middleware
