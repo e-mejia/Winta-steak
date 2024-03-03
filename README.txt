@@ -1,7 +1,6 @@
-Task tracker
-PURPOSE OF THE PROJECT: This is a React task tracking application that can be used to keep track of one's tasks.
-
-How's it made
+#  Winta Steakhouse + Bar
+PURPOSE OF THE PROJECT: This is a full stack website application for a restaurant.
+#  How's it made
 Tech used: HTML, CSS, JavaScript, ReactJS
 
 Using the core technologies of HTML, CSS and Javascript as the foundation, and using the popular Javascript Library, React, I built a task tracking application for everday tasks.
@@ -19,7 +18,7 @@ Todo.css
 Todoform.css
 The app also uses React hooks, useState, useEffect and useRef. The app uses a Universally Unique Identifier or UUID function to create unique IDs for mapping andkeeping track of each task.
 
-Optimizations
+#  Optimizations
 No app is ever perfect. And I plan to improve it at some point. Most likely adding localStorage to the mix.
 
 Lessons Learned:
