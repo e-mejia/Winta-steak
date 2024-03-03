@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winta Steakhouse+Bar</title>
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bokor&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="section">
+    <nav >
+      <div class="title">
+        <h1>winta</h1>
+        <p>STEAKHOUSE+BAR</p>
+      </div>
+    </nav>
+    
+    <div class="navLinks" id="navLinks"> 
+      <ul>
+      <li class="hideonmobile"><a href="/">Home</a></li>
+      <li class="hideonmobile"><a href="about">About</a></li>
+      <li class="hideonmobile"><a href="menu">Menu</a></li>
+      <li class="hideonmobile"><a href="gallery">Gallery</a></li>
+      <li class="hideonmobile"><a href="contact">Contact<a></a></li>
+      <li class="hideonmobile"><a href="news">News</a></li>
+      <li class="mobileMenu" onclick="showMenu()">
+        <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="white"/> 
+        </svg>
+       </a>
+    </ul>
+
+    </div>
+
+    <ul class="sidebar">
+      <li onclick="hideMenu()">
+        <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+          fill="white"/></svg>
+      </a>
+    </li>
+      <li><a href="/">Home</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="menu">Menu</a></li>
+      <li><a href="gallery">Gallery</a></li>
+      <li><a href="contact">Contact<a></a></li>
+      <li><a href="news">News</a></li>
+    </ul>
+  </div>
+
+    <section class="welcome">
+      <h3>WELCOME TO WINTA</h3>
+      <h1>Steakhouse + Bar</h1>
+      <button disabled>Check out our Menu</button>
+    </section>
+    <script>
+      const navLinks = document.querySelector('.sidebar');
+      
+      function showMenu() {
+        navLinks.style.display = 'flex';
+      }
+
+      function hideMenu() {
+        navLinks.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
