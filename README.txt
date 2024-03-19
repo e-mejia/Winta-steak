@@ -1,4 +1,4 @@
-#  Winta Steakhouse + Bar
+# Winta Steakhouse + Bar
 PURPOSE OF THE PROJECT: This is a full stack website application for a restaurant.
 
 #  How's it made
